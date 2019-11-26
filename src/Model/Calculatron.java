@@ -20,4 +20,8 @@ public class Calculatron {
         return num1 - num2;
     }
     
+    public static Double square (Double num1){
+        return Math.sqrt(num1);
+    }
+    
 }

@@ -27,7 +27,8 @@ public class Main {
             System.out.println("selecione a opção desejada"
                     + "\n1 - Add"
                     + "\n2 - Sub"
-                    + "\n3 - Exit");
+                    + "\n3 - Square"
+                    + "\n9 - Exit");
             opcao = teclado.nextInt();
 
             switch (opcao) {
@@ -44,7 +45,7 @@ public class Main {
                     break;
                 case (2):
                     num1 = null;
-                    num2 = null;
+                   
                     resultado = null;
                     System.out.println("digite o primeiro numero da operação");
                     num1 = teclado.nextDouble();
@@ -54,6 +55,14 @@ public class Main {
                     System.out.println("a subtação de " + num1 + " - " + num2 + " = " + resultado);
                     break;
                 case (3):
+                    num1 = null;              
+                    System.out.println("digite o  numero da operação");
+                    num1 = teclado.nextDouble();                    
+                    resultado =  Calculatron.square(num1);
+                    
+                    System.out.println("a raiz quadrada  de " + num1 + " = " + resultado);
+                    break;
+                case (9):
                     System.out.println("Saindo");
                     break;
                 default:
@@ -62,7 +71,7 @@ public class Main {
 
             }
 
-        } while (opcao != 3);
+        } while (opcao != 9);
 
     }
 
