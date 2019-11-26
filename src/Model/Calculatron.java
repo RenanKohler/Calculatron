@@ -24,4 +24,8 @@ public class Calculatron {
         return Math.sqrt(num1);
     }
     
+    public static Double abs (Double num1){
+        return Math.abs(num1);
+    }
+    
 }
